@@ -1,5 +1,5 @@
 
-Web Scrapping in Python
+Web Scrapping  practice in Python
 In [1]:
 import requests as rq
 import bs4
@@ -29,8 +29,8 @@ Out[8]:
 12
 In [9]:
 tb = []
-for t in table:
-    x = t.findAll('tbody')
+for i in table:
+    x = i.findAll('tbody')
     tb.append(x)
 In [10]:
 tb
