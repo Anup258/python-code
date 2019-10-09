@@ -2,7 +2,7 @@
 Web Scrapping  practice in Python
 In [1]:
 import requests as rq
-import bs4
+from BeautifulSoap import bs4
 In [2]:
 r = rq.get('https://en.wikipedia.org/wiki/List_of_cities_in_India_by_population')
 In [3]:
@@ -10,7 +10,7 @@ r.status_code
 Out[3]:
 200
 In [4]:
-soup = bs4.BeautifulSoup(r.content, 'html.parser')
+soup = bs4.BeautifulSoup(r.content, 'html.parser',xml)
 In [5]:
 soup.title.text
 Out[5]:
