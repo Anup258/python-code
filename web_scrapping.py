@@ -7,9 +7,8 @@ In [2]:
 r = rq.get('https://en.wikipedia.org/wiki/List_of_cities_in_India_by_population')
 In [3]:
 r.status_code
-Out[3]:
-200
-In [4]:
+import numpy as np
+import pandas as pd
 soup = bs4.BeautifulSoup(r.content, 'html.parser',xml)
 In [5]:
 soup.title.text
